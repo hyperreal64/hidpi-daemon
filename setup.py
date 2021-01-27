@@ -41,7 +41,7 @@ SCRIPTS = [
 ]
 
 def run_pyflakes3():
-    pyflakes3 = '/usr/bin/pyflakes3'
+    pyflakes3 = '/bin/pyflakes'
     if not os.access(pyflakes3, os.R_OK | os.X_OK):
         print('WARNING: cannot read and execute: {!r}'.format(pyflakes3))
         return
